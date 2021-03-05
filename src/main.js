@@ -5,6 +5,10 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+
+import './libs/element'
+
+
 new Vue({
   router,
   store,

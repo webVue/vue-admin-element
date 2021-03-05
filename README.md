@@ -1,24 +1,14 @@
 # vue-admin-element
 
-## Project setup
-```
-yarn install
-```
+1. router
+2. store
+3. views
+4. filters
+5. components
+6. assets
+7. services
+8. element
+    - 按需加载 npm install babel-plugin-component -D
+9. axios
+10. vue.config.js
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
