@@ -1,34 +1,23 @@
+import homeList from './home-list'
+
 const routes = [
     {
         path: '/',
         name: 'home',
-        component: () => import("views/home/home")
+        component: () => import("views/home/home"),
+
+        redirect: '/about',
+        children: [
+            ...homeList
+        ]
     },
+    // 登录路由 后续要是可以的话 有注册路由
     {
         path: '/login',
         name: 'login',
         component: () => import("views/login/login.vue")
     },
-    {
-        path: '/account',
-        name: 'account',
-        component: () => import("views/account/account.vue")
-    },
-    {
-        path: '/address',
-        name: 'address',
-        component: () => import("views/address/address.vue")
-    },
-    {
-        path: '/404',
-        name: 'errorPage',
-        component: () => import("views/error-page/404.vue")
-    },
-    {
-        path: '/food',
-        name: 'food',
-        component: () => import("views/food/food.vue")
-    },
+    // 错误路由重定向
     {
         path: '/*',
         redirect: '/404'
