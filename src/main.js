@@ -5,8 +5,8 @@ import store from './store'
 
 Vue.config.productionTip = false
 
-
-import './libs/element'
+import './chen/libs/element'
+import './assets/style/reset.scss'
 
 
 new Vue({

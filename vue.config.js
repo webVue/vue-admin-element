@@ -40,5 +40,8 @@ module.exports = {
             .set("services", resolve("src/services"))
             .set("components", resolve("src/components"))
             .set("views", resolve("src/views"))
+            .set("chen", resolve("src/chen"))
+            .set("store", resolve("src/store"))
+            .set("router", resolve("src/router"))
     },
 }
