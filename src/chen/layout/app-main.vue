@@ -1,15 +1,17 @@
 <template>
   <section class="container">
     <div class="wrapper" id="wrapper">
-      <transition name="fade-transform" mode="out-in"> <router-view></router-view> </transition>
+      <transition name="fade-transform" mode="out-in">
+        <router-view />
+      </transition>
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'AppMain'
-}
+  name: "appmain",
+};
 </script>
 
 <style lang="scss" scoped>

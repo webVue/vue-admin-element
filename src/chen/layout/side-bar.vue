@@ -4,7 +4,6 @@
       background-color="#192a5e"
       text-color="rgb(196, 201, 210)"
       active-text-color="#3963bc"
-      collapse-transition
       :collapse="collapse"
       router
       unique-opened
@@ -25,7 +24,8 @@
           :key="items.id"
           :index="items.path + ''"
         >
-          <i class="el-icon-menu"></i>{{ items.name }}
+          <i class="el-icon-menu"></i>
+          {{ items.name }}
         </el-menu-item>
       </el-submenu>
     </el-menu>
@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import {mapState} from 'vuex'
+import { mapState } from "vuex";
 
 export default {
   data() {
@@ -76,9 +76,9 @@ export default {
       ],
     };
   },
-  computed:{
-    ...mapState(['collapse'])
-  }
+  computed: {
+    ...mapState(["collapse"]),
+  },
 };
 </script>
 

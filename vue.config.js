@@ -24,13 +24,20 @@ module.exports = {
 
     // 接口代理
     devServer: {
+        // 代理多个请求
         proxy: {
-            '/yuelao-admin': {
-                target: 'http://192.168.1.185:8080/',      //  测试站
+            "/pc": {
+                target: 'https://testyxqplatform.yuqianshu.com/',
                 ws: true,
                 changeOrigin: true,
-            }
-        }
+            },
+            "/order": {
+                target: 'https://testyxqplatform.yuqianshu.com/',
+                ws: true,
+                changeOrigin: true,
+            },
+        },
+        port: 8090
     },
 
     // 项目别名
